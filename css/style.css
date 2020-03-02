@@ -23,4 +23,40 @@
 
 body {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: salmon;
+    color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto;
+    background-color: yellow;
+}
+
+header .container {
+    display: flex;
+    padding: 20px 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+header nav {
+    width: 60%;
+    background-color: saddlebrown;
+}
+
+header img {
+    margin-right: 100px;
+}
+

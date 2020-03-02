@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-.gradient{
+.gradient {
     background: rgba(252,30,137,1);
     background: -moz-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,30,137,1)), color-stop(100%, rgba(114,119,195,1)));
@@ -23,7 +23,7 @@
 
 body {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    background-color: salmon;
+    background-color: var(--background);
     color: white;
 }
 
@@ -35,28 +35,147 @@ a {
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 10px auto;
-    background-color: yellow;
+    margin: auto; 
+    flex-flow: wrap;
 }
 
 header .container {
     display: flex;
+    justify-content: space-between;
     padding: 20px 0;
+    flex-flow: wrap;
 }
 
 header ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-transform: uppercase;
+    flex-flow: wrap;
+}
+
+header a.text:hover {
+    color: #aaa;
+    text-decoration: underline;
 }
 
 header nav {
     width: 60%;
-    background-color: saddlebrown;
+    flex-flow: wrap;
 }
 
 header img {
     margin-right: 100px;
+    flex-flow: wrap;
 }
+
+.partidas{
+    width: 100%;
+    min-height: 100px;
+    background: rgba(66,44,90,1);
+    background: -moz-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,44,90,1)), color-stop(100%, rgba(16,15,17,1)));
+    background: -webkit-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+    background: -o-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+    background: -ms-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+    background: linear-gradient(to bottom, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422c5a', endColorstr='#100f11', GradientType=0 );  
+    flex-flow: wrap;
+}	
+
+.fa-search {
+    padding: 0;
+}
+
+.fa-search:hover {
+    color: var(--pink);
+}
+
+.partidas .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: wrap;
+}
+
+.partida img {
+    width: 40px;
+    padding: 0 10px;
+}
+
+.partida h2 {
+    font-size: 14px;
+    flex-flow: wrap;
+    padding: 10px 0;
+}
+
+.partida div {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 10px 0;
+}
+
+.red {
+    color: red;
+}
+
+.partida {
+    padding: 0 0 10px 0;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/meta_mundo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ligas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.ligas img {
+    height: 140px;
+}
+
+.ligas h4 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.ligas h3 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.ligas div {
+    margin-bottom: 40px;
+}
+
+.sobre {
+    background-image: url("../images/Teams/T6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 200px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+
+
+
+
+
+
+    
 

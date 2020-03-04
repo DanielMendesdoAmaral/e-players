@@ -190,6 +190,11 @@ header img {
     width: 40%;
     margin-right: 100px;
     text-align: right;
+    text-shadow: 0px 3px 3px black;
+}
+
+.texto-sobre h2 {
+    margin-bottom: 2em;
 }
 
 div.sobre-rgba {
@@ -200,6 +205,84 @@ div.sobre-rgba {
     height: 100%;
     background-color: rgba(114, 120, 195, 0.6);
 }
+
+.content {
+    display: flex;
+    margin-top: 220px;
+    justify-content: space-between;
+}
+
+.content section {
+    width: 70%;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0px 3px 10px #000;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card div {
+    padding: 2em;
+}
+
+.card div:hover {
+    background-color: #422c5a;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    padding: 1em 0;
+    font-size: 1.8em;
+}
+
+.resultados-box {
+    padding: 1em;
+    box-shadow: 0px 0px 5px black;
+}
+
+.resultado div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.resultado img {
+    width: 30px;
+}
+
+.resultado { 
+    text-align: center;
+}
+
+.resultado p {
+    font-size: 1.2em;
+    padding-top: 12.5px;
+}
+
+.content article {
+    width: 25%;
+}
+
+
+
+
 
 
 

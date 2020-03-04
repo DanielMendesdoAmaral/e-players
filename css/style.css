@@ -280,6 +280,11 @@ div.sobre-rgba {
     width: 25%;
 }
 
+footer {
+    background-color: black;
+    box-shadow: 0px -6px 10px black;
+}
+
 
 
 

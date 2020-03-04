@@ -254,7 +254,12 @@ div.sobre-rgba {
 
 .resultados-box {
     padding: 1em;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 5px 5px black;
+}
+
+.content article {
+    
+    height: 700px;
 }
 
 .resultado div {
@@ -280,18 +285,94 @@ div.sobre-rgba {
     width: 25%;
 }
 
+footer {
+    background-color: black;
+    box-shadow: 0px -6px 10px black;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+    padding: 2em 0;
+}
 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
 
+footer nav h3 {
+    font-size: 1.6em;
+    color: #646464;
+    margin-bottom: 1em;
+}
 
+footer nav ul {
+    list-style: none;
+}
 
+footer nav li {
+    margin-bottom: 1em;
+}
 
+footer nav a:hover {
+    border-bottom: solid 1px var(--purple);
+}
 
+footer form {
+    display: flex;
+    flex-direction: column;
+}
 
+footer form label {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #646464;
+}
 
+footer form input {
+    height: 2em;
+    width: 15em;
+    margin-right: -4px;
+    outline: none;
+    padding: 1px;
+}
 
+.btn {
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 0.65em 2em;
+    cursor: pointer;
+    background: linear-gradient(to top, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+}
 
+div.azul {
+    height: 15px;
+    background-color: var(--blue);
+}
 
+div.roxo {
+    height: 30px;
+    background-color: var(--purple);
+}
 
+div.rosa {
+    height: 45px;
+    background-color: var(--pink);
+}
 
-    
+.sociais {
+    display: flex;
+    font-size: 3em;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
 
+.sociais i{
+    background: linear-gradient(to top, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+footer p {
+    text-align: center;
+    color: #6f6f6f;
+}

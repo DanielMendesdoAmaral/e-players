@@ -161,15 +161,48 @@ header img {
     margin-bottom: 40px;
 }
 
-.sobre {
+.sobre-fundo {
     background-image: url("../images/Teams/T6.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 200px;
+    min-height: 500px;
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    
 }
+
+.sobre img {
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    width: 100%;
+    max-width: 30%;
+    margin-left: 100px;
+}
+
+.sobre {
+    position: relative;
+    display: flex;
+}
+
+.texto-sobre {
+    width: 40%;
+    margin-right: 100px;
+    text-align: right;
+}
+
+div.sobre-rgba {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114, 120, 195, 0.6);
+}
+
+
+
 
 
 

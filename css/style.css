@@ -93,9 +93,15 @@ header img {
 
 .partidas .container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.proximas-partidas {
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-flow: wrap;
 }
 
 .partida img {
@@ -177,7 +183,7 @@ header img {
     z-index: 99;
     top: -20px;
     width: 100%;
-    max-width: 30%;
+    max-width: 35%;
     margin-left: 100px;
 }
 
@@ -208,7 +214,7 @@ div.sobre-rgba {
 
 .content {
     display: flex;
-    margin-top: 220px;
+    margin-top: 80px;
     justify-content: space-between;
 }
 
@@ -398,7 +404,7 @@ footer p {
     width: 100%;
     max-width: 400px;
     margin: 10em auto;
-    box-shadow: 0px 10px 10px #000;
+    box-shadow: 0px 0px 8px black;
     padding: 1.5em;
 
 }
@@ -436,21 +442,38 @@ select {
 
 .border-blue {
     position: absolute;
-    border-top: #00A8DC;
-    border-left: #00A8DC;
-    border-right: #00A8DC;
-    width: 400px;
-    height: 200px;
-    background-color: #00A8DC;
+    border-top: solid 5px #00A8DC;
+    border-left: solid 5px #00A8DC;
+    border-right: solid 5px #00A8DC;
+    width: 448px;
+    height: 133.3px;
+    top: 642px;
+    left: 723px;
+    flex-flow: wrap;
 /*400x400.31*/     /*larguraxaltura*/
 }
 
 .border-purple {
-    position: relative;
+    position: absolute;
+    border-left: solid 5px #7278C3;
+    border-right: solid 5px #7278C3;
+    width: 448px;
+    height: 133.3px;
+    top: 780px;
+    left: 723px;
+    flex-flow: wrap;
 }
 
 .border-pink {
-    position: relative;
+    position: absolute;
+    border-left: solid 5px rgba(252,30,137,1);
+    border-right: solid 5px rgba(252,30,137,1);
+    border-bottom: solid 5px rgba(252,30,137,1);
+    width: 448px;
+    height: 133.5px;
+    top: 913px;
+    left: 723px;
+    flex-flow: wrap;
 }
 
 .campo fieldset {
@@ -472,4 +495,94 @@ select {
 
 .form-cadastro .campo:nth-child(10) button {
     margin: auto;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+/* Inicio Responsividade */
+/* 1200px */
+
+@media(max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+    header .container img {
+        max-width: 180px;
+    }
+    .partidas .container {
+        flex-flow: nowrap;
+        align-items: flex-start;
+    }
+    .em-andamento {
+        width: 30%;
+    }
+    .proximas-partidas {
+        flex-flow: wrap;
+        width: 70%;
+    }
+    .ligas h4 {
+        font-size: 30px;
+    }
+    .ligas h3 {
+        font-size: 60px;
+    }
+    .ligas img {
+        height: 90px;
+    }
+    .sobre img {
+        max-width: 50%;
+        margin-left: -10px;
+        margin-top: 40px;
+    }
+    .texto-sobre {
+        width: 50%;
+        margin-right: 70px;
+    }
+    .content {
+        margin-top: 30px;
+    }
+    .card img {
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+}  /*fim media query 800px*/
+
+
+
+
+
+/* Mobile */
+@media(max-width: 460px) {
+    header .fa-bars {
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header .container div a {
+        margin-left: 6em;
+    }
+    #menu {
+        position: absolute;
+        top: 5.5em;
+        background-color: var(--purple);
+        width: 100%;
+        left: 0;
+        display: none;
+    }
+    #menu ul {
+        flex-direction: column;
+        height: 300px;
+    }
+    #menu a {
+        padding: 0.5em 0;
+        display: block;
+        margin-left: 1em;
+    }
 }

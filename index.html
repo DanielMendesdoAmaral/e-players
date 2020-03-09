@@ -10,9 +10,7 @@
     <header>
         <div class="container">
             <div>
-                <a href="#" onclick="botaoMenu()">
-                    <i class="fas fa-bars"></i>
-                </a>
+                <a href="#" onclick="botaoMenu()"><i class="fas fa-bars"></i></a>
                 <a href="index.html" title="Acessar a página inicial do site."><img src="images/Logo.svg" alt="Logo do site E-Players"></a>
             </div>
             <nav id="menu">
@@ -101,11 +99,13 @@
                     <h4>Principais</h4>
                     <h3>Ligas</h3>
                 </div>
-                <img src="images/CBLOL_2017.png" alt="Liga 1">
-                <img src="images/SuperLigaABCDE.png" alt="Liga 2">
-                <img src="images/Liga_Master_Fibertel.png" alt="Liga3">
-                <img src="images/worlds-logo-gold.png" alt="Liga 4">
-                <img src="images/wgr_lplol-logo-2020-71fc5702eb0473cb8d1da98fc28d054bebbfa505d4d80b457b11754d8a737255.png" alt="Liga 5">
+                <div class="ligas-imagens">
+                    <img src="images/CBLOL_2017.png" alt="Liga 1">
+                    <img src="images/SuperLigaABCDE.png" alt="Liga 2">
+                    <img src="images/Liga_Master_Fibertel.png" alt="Liga3">
+                    <img src="images/worlds-logo-gold.png" alt="Liga 4">
+                    <img src="images/wgr_lplol-logo-2020-71fc5702eb0473cb8d1da98fc28d054bebbfa505d4d80b457b11754d8a737255.png" alt="Liga 5">
+                </div>
             </div>
         </div>
         <section class="sobre">
@@ -246,11 +246,12 @@
         <p> &copy E-Sports Escola SENAI de Informática - Todos os direitos reservados</p>
     </footer>
     <script>
-        function botaoMenu(){
+        function botaoMenu() {
             var m = document.getElementById("menu");
             if(m.style.display == "block"){
                 m.style.display = "none";
-            }else{
+            }
+            else {
                 m.style.display = "block";
             }
         }

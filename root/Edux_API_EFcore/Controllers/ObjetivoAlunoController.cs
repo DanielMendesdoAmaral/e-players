@@ -40,11 +40,7 @@ namespace Edux_Api_EFcore.Controllers
                 if (qtdObjetivosAlunos == 0)
                     return NoContent();
 
-                return Ok(new
-                {
-                    totalCount = qtdObjetivosAlunos,
-                    data = objetivosAlunos
-                });
+                return Ok(objetivosAlunos);
             }
             catch (Exception ex)
             {

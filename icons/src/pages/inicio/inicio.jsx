@@ -67,6 +67,13 @@ const Inicio = () => {
                 </div>
             )
         }
+        else {
+            return (
+                <>
+                    <h1></h1>
+                </>
+            )
+        }
     }
 
     return ( 

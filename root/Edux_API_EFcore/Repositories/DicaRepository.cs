@@ -25,8 +25,13 @@ namespace Edux_Api_EFcore.Repositories
             try
             {
                 return _ctx.Dicas
-                    .Include(d => d.Usuario)
                     .Include(d => d.Curtidas)
+                    .Include(d => d.Usuario)
+                    .ThenInclude(d=>d.AlunosTurmas)
+                    .ThenInclude(d=>d.Turma)
+                    .Include(y=>y.Usuario)
+                    .ThenInclude(y=>y.ProfessoresTurmas)
+                    .ThenInclude(y=>y.Turma)
                     .ToList();
             }
             catch(Exception ex)
@@ -40,8 +45,13 @@ namespace Edux_Api_EFcore.Repositories
             try
             {
                 return _ctx.Dicas
-                    .Include(d => d.Usuario)
                     .Include(d => d.Curtidas)
+                    .Include(d => d.Usuario)
+                    .ThenInclude(d=>d.AlunosTurmas)
+                    .ThenInclude(d=>d.Turma)
+                    .Include(y=>y.Usuario)
+                    .ThenInclude(y=>y.ProfessoresTurmas)
+                    .ThenInclude(y=>y.Turma)
                     .FirstOrDefault(d => d.Id == id);
             }
             catch (Exception ex)

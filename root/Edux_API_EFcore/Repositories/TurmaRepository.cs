@@ -28,9 +28,8 @@ namespace Edux_Api_EFcore.Repositories
         {
             try
             {
-
                 return _ctx.Turmas.Include(t => t.AlunosTurmas).ThenInclude(a => a.Usuario).Include(t=>t.ProfessoresTurmas).ThenInclude(a => a.Usuario).Include(t=>t.Curso).ToList();
-
+                //return _ctx.Turmas.Include(t => t.AlunosTurmas).ThenInclude(a => a.Usuario).Include(t=>t.ProfessoresTurmas).ThenInclude(a => a.Usuario).Include(t=>t.Curso).Include(c=>c.AlunosTurmas).ThenInclude(a=>a.ObjetivosAlunos).ThenInclude(o=>o.Objetivo).ThenInclude(o=>o.Categoria).ToList();
             }
             catch (Exception ex)
             {

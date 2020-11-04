@@ -34,7 +34,6 @@ namespace Edux_Api_EFcore.Controllers
         /// </summary>
         /// <returns>Lista com todos os produtos</returns>
         // GET: api/<CategoriaController>
-        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -48,11 +47,7 @@ namespace Edux_Api_EFcore.Controllers
                 if (qtdCategorias == 0)
                     return NoContent();
 
-                return Ok(new
-                {
-                    totalCount = qtdCategorias,
-                    data = categorias
-                }) ;
+                return Ok(categorias);
 
 
             }

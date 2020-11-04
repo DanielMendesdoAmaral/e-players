@@ -57,7 +57,7 @@ const routing = (
       <Route exact path="/" component={Inicio}/> 
       <Route path="/login" component={Login}/>
       <Route path="/cadastrar" component={Cadastro}/> 
-      <RotaPrivada path="/timeline" component={TimeLine}/>
+     <RotaPrivada path="/timeline" component={TimeLine}/> 
       <RotaPrivada path="/turmas" component={Turmas}/>
       <RotaPrivada path="/turma/detalhes/:turmaId" component={DetalhesTurma} />
       <RotaPrivada path="/objetivos" component={Objetivos} />

@@ -55,6 +55,7 @@ const Objetivos = () => {
             <Menu/>
             {renderizarTitulo()}
             <Container>
+            <h2 style={{lineHeight: "300%", textAlign: "center"}}>Escolha uma turma</h2>
                 <Row style={{marginTop: "50px"}}>
                     {mostrarErro()}
                     {

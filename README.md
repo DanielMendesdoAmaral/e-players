@@ -1,0 +1,1 @@
+Projeto criado no curso técnico em Desenvolvimento de Sistemas. Ele foi desenvolvido na sprint 2 (Front-End). O backend foi feito na sprint 4 (POO). [Clique aqui para ver o projeto completo.](https://github.com/DanielMendesdoAmaral/e-players-completo)
